@@ -31,3 +31,8 @@ module.exports = {
  * React-specific apps, including hooks usage. It also includes accessibility rules via react-a11y as
  * well as rules for import statements and a few other niceties.
  */
+
+/**
+ * Reminder to self to convert to airbnb if neede
+ *
+ */
