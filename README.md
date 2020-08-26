@@ -1,4 +1,4 @@
-# bookshelf <img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434191/cssdebugger_ftm8tt.gif" alt="GIF of css debugger" style="width:10px;" />
+# bookshelf <img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434754/kindpng_4867131_jefby2.png" alt="GIF of css debugger" style="width:10px;" />
 
 ### A component library for free distributable experiments.
 
