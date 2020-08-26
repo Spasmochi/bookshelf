@@ -1,39 +1,40 @@
-# gatsby-starter-typescript-deluxe 🌟
+# bookshelf 🌟
 
-### An opinionated starter library for creating React applications with Gatsby (v2) and TypeScript.
+### A component library for free distributable experiments.
 
-### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
+### [View Demo](https://bookshelf-theta.vercel.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-library-typescript-deluxe/deploys)
 
-This starter library is pre-configured with the following integrations:
+This component library is pre-configured with the following integrations:
 
 - **TypeScript** for type-safe code.
-- **Styled-Components** for all your styles.
+- **Styled-Components** for all the styles.
+- **Tailwind** for a responsive 
 - **modern-css-reset** for a reset of sensible default styles.
 - **Framer Motion** for awesome animations.
 - **gatsby-image and gatsby-transformer-sharp** for optimized images.
 - **gatsby-plugin-manifest / SEO component** for an SEO-friendly PWA.
-- **Storybook with add-ons** for showing off your awesome components.
+- **Storybook with add-ons** for showing off the awesome components.
 - **Jest and React Testing library** for snapshots and unit tests.
-- **ESLint with an emphasis on functional patterns (with Prettier and TypeScript integration)** to make your code look its best.
-- **React Axe and React A11y for accessibility** so that your site is awesome for everyone.
+- **ESLint with an emphasis on functional patterns (with Prettier and TypeScript integration)** to make the code look its best.
+- **React Axe and React A11y for accessibility** so that the site is awesome for everyone.
 
 ## Installation
 
-You will need to have `node` and `npm` installed on your computer.
+You will need to have `node` and `npm` installed on the computer.
 
 You can either use `npx` or install the `gatsby-cli` globally.
 
 The `npx` way:
 
 ```sh
-npx gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
+npx gatsby new my-site https://github.com/Spasmochi/bookshelf
 ```
 
 or the global way:
 
 ```sh
 npm i -g gatsby-cli
-gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
+gatsby new my-site https://github.com/Spasmochi/bookshelf
 ```
 
 ## Usage
@@ -48,11 +49,11 @@ If all was successful, you should see links to two development servers in the No
 
 1. [http://localhost:8080](http://localhost:8080):
 
-This is the development server that allows you to preview your website. It comes with hot-module reloading, which means that you should see your changes almost immediately without having to refresh the browser tab.
+This is the development server that allows you to preview the website. It comes with hot-module reloading, which means that you should see the changes almost immediately without having to refresh the browser tab.
 
 2. [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql):
 
-This is the development server that allows you to interact with the your site's GraphQL data via the GraphiQL IDE.
+This is the development server that allows you to interact with the the site's GraphQL data via the GraphiQL IDE.
 
 ### Available Scripts
 
@@ -60,22 +61,42 @@ This is the development server that allows you to interact with the your site's 
 | ----------------- | :---------------------------------------------------------------------------------- |
 | `develop`         | Start the development server with hot module reloading.                             |
 | `dev`             | Alias for `develop`.                                                                |
-| `format`          | Format your code with Prettier.                                                     |
+| `format`          | Format the code with Prettier.                                                      |
 | `clean`           | Delete the `.cache` and `public` directories.                                       |
-| `test`            | Run your Jest tests once.                                                           |
-| `test:watch`      | Run your Jest tests in watch mode.                                                  |
-| `lint`            | Lint your code with ESLint.                                                         |
-| `lint:watch`      | Lint your code with ESLint in watch mode.                                           |
-| `lint:fix`        | Lint your code with ESLint and attempt to fix linting issues.                       |
-| `serve`           | Serve the production build of your site for testing.                                |
-| `build`           | Compile your application and make it ready for deployment                           |
+| `test`            | Run the Jest tests once.                                                            |
+| `test:watch`      | Run the Jest tests in watch mode.                                                   |
+| `lint`            | Lint the code with ESLint.                                                          |
+| `lint:watch`      | Lint the code with ESLint in watch mode.                                            |
+| `lint:fix`        | Lint the code with ESLint and attempt to fix linting issues.                        |
+| `serve`           | Serve the production build of the site for testing.                                 |
+| `build`           | Compile the application and make it ready for deployment                            |
 | `storybook`       | Starts Storybook.                                                                   |
-| `build-storybook` | Compiles your stories and makes them ready for deployment.                          |
+| `build-storybook` | Compiles the stories and makes them ready for deployment.                           |
 | `update`          | Updates the package.json to the latest dependency versions using npm-check-updates. |
 
 ## Styling
 
 This library is pre-configured with [styled-components](https://www.styled-components.com/).
+
+You can also apply tailwind styling via twin macro [tailwind](https://tailwindcss.com/)
+
+```jsx
+import React from "react"
+import tw, { styled } from "twin.macro"
+const Button = styled.button`
+  ${tw`bg-blue-500 hover:bg-blue-800 text-white p-2 rounded`}
+`
+// or use the shorthand version
+const Button = tw.button`
+  bg-blue-500 hover:bg-blue-800 text-white p-2 rounded
+`
+const IndexPage = () => (
+  <div>
+    <h1>Hi people</h1>
+    <Button>Activate</Button>
+  </div>
+)
+```
 
 #### Global Styles
 
@@ -85,11 +106,11 @@ The global style also includes the styles from [css-modern-reset](https://github
 
 #### Theme
 
-You can define your theme styles in the `/src/styles/theme` file. The theme will be available in any styled-component via `props.theme` and to any other component via the `useTheme` hook.
+You can define the theme styles in the `/src/styles/theme` file. The theme will be available in any styled-component via `props.theme` and to any other component via the `useTheme` hook.
 
 #### Handling Media Queries
 
-The theme utilizes the [use-media](https://github.com/streamich/use-media) library, which allows you to track the state of a CSS media queries. This works by passing a boolean for each screen size that you defined in your theme. Just define your screen sizes in `src/styles/theme`.
+The theme utilizes the [use-media](https://github.com/streamich/use-media) library, which allows you to track the state of a CSS media queries. This works by passing a boolean for each screen size that you defined in the theme. Just define the screen sizes in `src/styles/theme`.
 
 #### Styling Examples
 
@@ -97,7 +118,7 @@ The theme utilizes the [use-media](https://github.com/streamich/use-media) libra
 
 #### The CSS Prop
 
-This starter is also preconfigured to work with the `css` prop:
+This library is also preconfigured to work with the `css` prop:
 
 ```jsx
 import styled from "styled-components";
@@ -135,17 +156,17 @@ const MyComponent = () => (
 
 ## CSS Debugger
 
-This starter also includes a `CSSDebugger` component. This component allows you to easily debug your styles by drawing outlines around all elements and applying a grid in the background. It also includes a toggle button that you can optionally use during debugging.
+This library also includes a `CSSDebugger` component. This component allows you to easily debug the styles by drawing outlines around all elements and applying a grid in the background. It also includes a toggle button that you can optionally use during debugging.
 
-**_Note: You can drag the toggle button around if it gets in your way._**
+**_Note: You can drag the toggle button around if it gets in the way._**
 
 The `CSSDebugger` component is used in the `layout.tsx` component.
 
-<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660140/gatsby-starter-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
+<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660140/gatsby-library-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
 
 ## Linting
 
-This project includes a combination of ESLint and React-A11y rules for React and TypeScript code, which are extended from the [eslint-config-gojutin](https://github.com/gojutin/eslint-config-gojutin) npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions. Since all of the rules and dependencies are included in this package, you can easily remove it if you prefer to wire up your own linting configuration.
+This project includes a combination of ESLint and React-A11y rules for React and TypeScript code, which are extended from the [eslint-config-gojutin](https://github.com/gojutin/eslint-config-gojutin) npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
 
 The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
 
@@ -165,19 +186,21 @@ This particular rule disallows the use of the `this` keyword, which will result 
 
 ## Storybook
 
-Storybook is available by creating stories in the `src/stories` directory and running the `npm run storybook` script. Your storybook will be availble at [http://localhost:6006](http://localhost:6006).
+Storybook is available by creating stories in the `src/stories` directory and running the `npm run storybook` script. the storybook will be availble at [http://localhost:6006](http://localhost:6006).
 
-You can also compile a production build of your Storybook by running `npm run build:storybook`. The compiled production build will be located in a `/storybook-static` directory.
+A chromatic integration is on the way.
+
+You can also compile a production build of the Storybook by running `npm run build:storybook`. The compiled production build will be located in a `/storybook-static` directory.
 
 ## Deployment
 
-Lint your files and fix all linting issues.
+Lint the files and fix all linting issues.
 
 ```sh
 npm run lint
 ```
 
-Run your test suite and fix any broken tests.
+Run the test suite and fix any broken tests.
 
 ```sh
 npm run test
@@ -191,7 +214,7 @@ npm run build
 
 ## Lighthouse Audit Score 💯
 
-<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660306/gatsby-starter-typescript-deluxe/gatsby-starter-typescript-deluxe-lighthouse-audit.gif" style="max-width: 100%;" alt="Lighthouse Score" />
+<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660306/gatsby-library-typescript-deluxe/gatsby-library-typescript-deluxe-lighthouse-audit.gif" style="max-width: 100%;" alt="Lighthouse Score" />
 
 ## TODOS
 
