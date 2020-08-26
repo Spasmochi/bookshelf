@@ -2,7 +2,7 @@
 
 ### A component library for free distributable experiments.
 
-### [View Demo](https://bookshelf-theta.vercel.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-library-typescript-deluxe/deploys)
+### [View Live site](https://bookshelf-theta.vercel.app/) 
 
 This component library is pre-configured with the following integrations:
 
