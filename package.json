@@ -48,6 +48,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "@storybook/addon-actions": "^6.0.1",
     "@storybook/addon-knobs": "^6.0.1",
     "@storybook/addon-links": "^6.0.1",
@@ -78,6 +80,7 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "eslint-watch": "^7.0.0",
+    "gatsby-plugin-emotion": "^4.3.10",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.3.0",
     "jest-styled-components": "^7.0.2",
@@ -85,6 +88,7 @@
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0",
     "tslint-immutable": "^6.0.1",
+    "twin.macro": "^1.7.0",
     "typescript": "^3.9.7"
   }
 }
