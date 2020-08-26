@@ -1,6 +1,6 @@
 const siteTitle = "bookshelf";
 const siteDescription =
-  "A Gatsby starter with TypeScript, Storybook, Styled Components, Tailwind, Framer Motion, Jest, and more.";
+  "A component library with TypeScript, Storybook, Styled Components, Tailwind, Framer Motion, Jest, and more.";
 const siteAuthor = "@spasmochi";
 const siteUrl = "https://bookshelf-theta.vercel.app/";
 const siteImage = `${siteUrl}/icons/icon_512x512.png`;
