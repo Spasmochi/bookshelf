@@ -65,3 +65,5 @@ public
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# might be worth rerunning this through https://www.toptal.com/developers/gitignore
