@@ -2,7 +2,7 @@
   "include": ["./src/**/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "jsx": "react",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
