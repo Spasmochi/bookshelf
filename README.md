@@ -1,7 +1,5 @@
 # bookshelf 
 
-<img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434754/kindpng_4867131_jefby2.png" alt="GIF of css debugger" style="max-width: 10%;" />
-
 ### A component library for free distributable experiments.
 
 ### [View Live site](https://bookshelf-theta.vercel.app/) 
