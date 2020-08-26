@@ -212,10 +212,6 @@ Compile a production build to the `/public` directory.
 npm run build
 ```
 
-## Lighthouse Audit Score 💯
-
-<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660306/gatsby-library-typescript-deluxe/gatsby-library-typescript-deluxe-lighthouse-audit.gif" style="max-width: 100%;" alt="Lighthouse Score" />
-
 ## TODOS
 
 - Write more robust unit tests for all components and custom hook.
