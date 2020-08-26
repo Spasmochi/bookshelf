@@ -3,6 +3,7 @@
 node_modules/*
 public/*
 .storybook/*
+.ignore/*
 @types
 __mocks__
 __tests__
