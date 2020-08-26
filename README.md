@@ -162,7 +162,7 @@ This library also includes a `CSSDebugger` component. This component allows you 
 
 The `CSSDebugger` component is used in the `layout.tsx` component.
 
-<img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434061/cssdebugger_zwrh5n.gif" alt="GIF of css debugger" style="max-width: 100%;" />
+<img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434191/cssdebugger_ftm8tt.gif" alt="GIF of css debugger" style="max-width: 100%;" />
 
 ## Linting
 
