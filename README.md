@@ -164,8 +164,6 @@ This library also includes a `CSSDebugger` component. This component allows you 
 
 The `CSSDebugger` component is used in the `layout.tsx` component.
 
-<img src="https://res.cloudinary.com/dy4xcthnz/image/upload/v1598434191/cssdebugger_ftm8tt.gif" alt="GIF of css debugger" style="max-width: 100%;" />
-
 ## Linting
 
 This project includes a combination of ESLint and React-A11y rules for React and TypeScript code, which are extended from the [eslint-config-gojutin](https://github.com/gojutin/eslint-config-gojutin) npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
